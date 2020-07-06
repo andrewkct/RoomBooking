@@ -13,6 +13,7 @@ This is a demo app to check for room availability in the office.
 2. To run unit tests, press "Command⌘ + 6" then "Command⌘ + U" to run and view the unit tests.
 3. To simulate scanning the QR, please use "test_success.png" and "test_failed.png" found in the root folder. This is to demo the booking is either success or failed.
 
-# Assumption & Limitation
+# Assumption
 - When selecting a date or time, user is required to "Scroll & Select" and then press "Done" to apply the choice.
-- As there is no server to verify the QR code and room booking. This app is only able to validate two valid QR code which are "dGVzdF9zdWNjZXNz" and "dGVzdF9mYWlsZWQ=". If the QR does not contain these codes then it will be an invalid QR format. "dGVzdF9zdWNjZXNz" is to simular a room is booked succesfully and vice versa.
+- When applying a sort, user is required to press "Apply" to apply a sort type whereas pressing "Reset" will remove selected sort type.
+- As there is no server to validate the QR code and room booking. This app is only able to validate two QR code which are "dGVzdF9zdWNjZXNz" and "dGVzdF9mYWlsZWQ=". If the QR does not contain these codes then it will be an invalid QR format. "dGVzdF9zdWNjZXNz" is to simulate a room is booked succesfully whereas "dGVzdF9mYWlsZWQ=" is to simulate failing to book a room.
