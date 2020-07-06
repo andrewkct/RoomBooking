@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerView" customModule="RoomBooking" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDone" destination="0TQ-CX-D6t" id="lx2-uC-ZbO"/>
+                <outlet property="datePicker" destination="gK0-Rd-Dob" id="Z7Z-7I-KcN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TQ-CX-D6t">
+                    <rect key="frame" x="367" y="10" width="37" height="30"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="QLz-dj-H4f"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-Rd-Dob">
+                    <rect key="frame" x="0.0" y="40" width="414" height="162"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="highlightsToday" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gK0-Rd-Dob" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8ip-ul-EMF"/>
+                <constraint firstItem="gK0-Rd-Dob" firstAttribute="top" secondItem="0TQ-CX-D6t" secondAttribute="bottom" id="Mdm-2r-gea"/>
+                <constraint firstAttribute="trailing" secondItem="gK0-Rd-Dob" secondAttribute="trailing" id="ZFr-u4-Bed"/>
+                <constraint firstItem="0TQ-CX-D6t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="c0z-0b-kDw"/>
+                <constraint firstAttribute="trailing" secondItem="0TQ-CX-D6t" secondAttribute="trailing" constant="10" id="diw-2l-j9r"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gK0-Rd-Dob" secondAttribute="bottom" constant="20" id="fz9-HC-yAT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationView" customModule="RoomBooking" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="Cxq-GM-GEd" id="a81-1s-jHh"/>
+                <outlet property="btnBackWidthConstraint" destination="FMJ-VH-FIK" id="jXH-AX-TYe"/>
+                <outlet property="btnCamera" destination="1sd-UK-KgV" id="QKr-kV-AaH"/>
+                <outlet property="btnCameraWidthConstraint" destination="5Mu-r4-dI3" id="t8V-QV-EHx"/>
+                <outlet property="lblTitle" destination="ZRV-KB-5d4" id="eTd-AZ-QFt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxq-GM-GEd">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="FMJ-VH-FIK"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" image="ic_back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="9My-A3-Drc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRV-KB-5d4">
+                    <rect key="frame" x="55" y="14.5" width="304" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-UK-KgV">
+                    <rect key="frame" x="369" y="0.0" width="45" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="5Mu-r4-dI3"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="9" maxX="10" maxY="9"/>
+                    <state key="normal" image="ic_camera"/>
+                    <connections>
+                        <action selector="cameraAction:" destination="-1" eventType="touchUpInside" id="Ce8-sg-eAh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ZRV-KB-5d4" firstAttribute="leading" secondItem="Cxq-GM-GEd" secondAttribute="trailing" constant="10" id="KKL-Zh-vEV"/>
+                <constraint firstItem="ZRV-KB-5d4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RWh-fF-2NY"/>
+                <constraint firstAttribute="bottom" secondItem="1sd-UK-KgV" secondAttribute="bottom" id="bQs-Xz-LV2"/>
+                <constraint firstAttribute="bottom" secondItem="Cxq-GM-GEd" secondAttribute="bottom" id="el7-Ya-tt9"/>
+                <constraint firstItem="Cxq-GM-GEd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="j40-XG-Tbz"/>
+                <constraint firstAttribute="trailing" secondItem="1sd-UK-KgV" secondAttribute="trailing" id="nI6-9y-dgY"/>
+                <constraint firstItem="1sd-UK-KgV" firstAttribute="leading" secondItem="ZRV-KB-5d4" secondAttribute="trailing" constant="10" id="q2p-1b-hw2"/>
+                <constraint firstItem="Cxq-GM-GEd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rW9-Dd-Rtk"/>
+                <constraint firstItem="1sd-UK-KgV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zU1-fZ-EyS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="28" height="28"/>
+        <image name="ic_camera" width="28" height="28"/>
+    </resources>
+</document>

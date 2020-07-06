@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerView" customModule="RoomBooking" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDone" destination="pI1-gE-a0s" id="lEA-Bo-bh9"/>
+                <outlet property="timePicker" destination="4CQ-LP-suj" id="Y9F-Lw-Iaz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI1-gE-a0s">
+                    <rect key="frame" x="367" y="10" width="37" height="30"/>
+                    <state key="normal" title="Done"/>
+                    <connections>
+                        <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="MVZ-vi-oT4"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CQ-LP-suj">
+                    <rect key="frame" x="0.0" y="40" width="414" height="162"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pI1-gE-a0s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="3FY-xp-WXj"/>
+                <constraint firstAttribute="trailing" secondItem="4CQ-LP-suj" secondAttribute="trailing" id="F2e-zZ-Jfb"/>
+                <constraint firstItem="4CQ-LP-suj" firstAttribute="top" secondItem="pI1-gE-a0s" secondAttribute="bottom" id="R5T-B0-eWI"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4CQ-LP-suj" secondAttribute="bottom" constant="20" id="gKA-80-XYJ"/>
+                <constraint firstItem="4CQ-LP-suj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kZZ-l3-qXY"/>
+                <constraint firstAttribute="trailing" secondItem="pI1-gE-a0s" secondAttribute="trailing" constant="10" id="mo7-eE-Aea"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="117"/>
+        </view>
+    </objects>
+</document>

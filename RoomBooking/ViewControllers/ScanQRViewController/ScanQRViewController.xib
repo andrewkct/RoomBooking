@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanQRViewController" customModule="RoomBooking" customModuleProvider="target">
+            <connections>
+                <outlet property="imgViewScanOverLayer" destination="FIX-nf-LfO" id="pUs-qY-nOb"/>
+                <outlet property="navigationView" destination="9ka-bz-8O9" id="cBd-HV-6xw"/>
+                <outlet property="scannerView" destination="diw-fi-PK6" id="Z6o-Te-RLW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-bz-8O9" customClass="CustomNavigationView" customModule="RoomBooking" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="blv-8n-cgD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diw-fi-PK6">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_scan_overlayer" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-nf-LfO">
+                    <rect key="frame" x="62" y="308" width="290" height="290"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="FIX-nf-LfO" secondAttribute="height" id="a9y-LW-FBf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="9ka-bz-8O9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4mo-hT-0dl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="diw-fi-PK6" secondAttribute="bottom" id="KIa-D8-pKy"/>
+                <constraint firstItem="diw-fi-PK6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Oik-LJ-YAL"/>
+                <constraint firstItem="FIX-nf-LfO" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="R8I-hj-REr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9ka-bz-8O9" secondAttribute="trailing" id="Wkk-de-YJC"/>
+                <constraint firstItem="FIX-nf-LfO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="XaS-cS-bwy"/>
+                <constraint firstItem="diw-fi-PK6" firstAttribute="top" secondItem="9ka-bz-8O9" secondAttribute="bottom" id="Xjp-cr-IZL"/>
+                <constraint firstItem="FIX-nf-LfO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Zv2-rK-LkY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="diw-fi-PK6" secondAttribute="trailing" id="a7T-9n-3hp"/>
+                <constraint firstItem="9ka-bz-8O9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xk7-LB-T4b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="117"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_scan_overlayer" width="224" height="228"/>
+    </resources>
+</document>
